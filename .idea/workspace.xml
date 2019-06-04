@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7933437-5d80-4e02-bdf3-59b48a8c515f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Hiển thị danh sách khách hàng.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-    </list>
+    <list default="true" id="a7933437-5d80-4e02-bdf3-59b48a8c515f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,12 +82,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559643085928</updated>
-      <workItem from="1559643087071" duration="523000" />
+      <workItem from="1559643087071" duration="763000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="523000" />
+    <option name="totallyTimeSpent" value="763000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1052" extended-state="6" />
