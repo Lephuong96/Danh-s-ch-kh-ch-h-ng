@@ -5,16 +5,29 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Danh sách khách hàng</title>
     <style>
         table {
             border-collapse: collapse;
-            width: 100%;
+            width: 80%;
+            margin: 0 auto;
         }
+
         th, td {
             padding: 8px;
-            text-align: left;
+            text-align: center;
             border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            color: orange;
+        }
+        td{
+            color: royalblue;
+        }
+
+        h1 {
+            color: blue;
         }
     </style>
 </head>
@@ -30,38 +43,39 @@
     </tr>
     <?php
     $customerlist = array(
-        "1" => array("ten" => "Mai Văn Hoàn",
-            "ngaysinh" => "1983-08-20",
-            "diachi" => "Hà Nội",
-            "anh" => "images/1.jpg"),
-        "2" => array("ten" => "Nguyễn Văn Nam",
-            "ngaysinh" => "1983-08-20",
-            "diachi" => "Bắc Giang",
-            "anh" => "images/2.jpg"),
-        "3" => array("ten" => "Nguyễn Thái Hòa",
-            "ngaysinh" => "1983-08-21",
-            "diachi" => "Nam Định",
-            "anh" => "images/3.jpg"),
-        "4" => array("ten" => "Trần Đăng Khoa",
-            "ngaysinh" => "1983-08-22",
-            "diachi" => "Hà Tây",
-            "anh" => "images/4.jpg"),
-        "5" => array("ten" => "Nguyễn Đình Thi",
-            "ngaysinh" => "1983-08-17",
-            "diachi" => "Hà Nội",
-            "anh" => "images/5.jpg")
+        array("name" => "Mai Văn Hoàn",
+            "date" => "1983-08-20",
+            "address" => "Hà Nội",
+            "image" => "images/1.jpg"),
+        array("name" => "Nguyễn Văn Nam",
+            "date" => "1983-08-20",
+            "address" => "Bắc Giang",
+            "image" => "images/2.jpg"),
+        array("name" => "Nguyễn Thái Hòa",
+            "date" => "1983-08-21",
+            "address" => "Nam Định",
+            "image" => "images/3.jpg"),
+        array("name" => "Trần Đăng Khoa",
+            "date" => "1983-08-22",
+            "address" => "Hà Tây",
+            "image" => "images/4.jpg"),
+        array("name" => "Nguyễn Đình Thi",
+            "date" => "1983-08-17",
+            "address" => "Hà Nội",
+            "image" => "images/5.jpg")
     );
     ?>
     <?php
-    foreach($customerlist as $key => $values){
-        echo "<tr>";
-        echo "<td>".$key."</td>";
-        echo "<td>".$values['ten']."</td>";
-        echo "<td>".$values['ngaysinh']."</td>";
-        echo "<td>".$values['diachi']."</td>";
-        echo "<td><image src ='".$values['anh']."' width = '100px' height ='100px'/></td>";
-        echo "</tr>";
-    }
+    foreach ($customerlist as $key => $values):
+        ?>
+        <tr><td><?php echo ++$key?></td>
+            <td><?php echo $values['name']?></td>
+            <td><?php echo $values['date']?></td>
+            <td><?php echo $values['address']?></td>
+            <td><img src="<?php echo $values['image']?>" alt="" width="200px" ></td>
+        </tr>
+        <?php
+    endforeach;
     ?>
 </table>
 </body>
